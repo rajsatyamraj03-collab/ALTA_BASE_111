@@ -1,0 +1,18 @@
+Problem Statement & What to Create
+Write a program that takes an integer N and prints all numbers from N down to 1 in reverse order using a while loop.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    while (N >= 1) {
+        cout << N << " ";
+        N--;
+    }
+
+    return 0;
+}
