@@ -1,0 +1,26 @@
+Problem Statement & What to Create
+Write a program that accepts an integer N and checks if it is divisible by both 3 and 5, only 3, only 5, or neither. Print an appropriate message for each case.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    if (N % 3 == 0 && N % 5 == 0) {
+        cout << "Divisible by both 3 and 5";
+    }
+    else if (N % 3 == 0) {
+        cout << "Divisible only by 3";
+    }
+    else if (N % 5 == 0) {
+        cout << "Divisible only by 5";
+    }
+    else {
+        cout << "Not divisible by 3 or 5";
+    }
+
+    return 0;
+}
